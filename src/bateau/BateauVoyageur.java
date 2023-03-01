@@ -94,11 +94,15 @@ public class BateauVoyageur extends Bateau {
   public String toString() {
     StringBuilder equipements = new StringBuilder();
 
-    for (Equipement equipement : this.lesEquipements) {
-      equipements.append("\n\t").append(equipement);
+    if (this.lesEquipements.size() > 0) {
+      for (Equipement equipement : this.lesEquipements) {
+        equipements.append("\n -").append(equipement);
+      }
+    } else {
+      equipements.append("\nAucun équipement");
     }
 
-    return String.format("%s\nVitesse : %s\nListe des équipements :%s", super.toString(), this.vitesseBatVoy, equipements.toString());
+    return String.format("%s\nVitesse : %s\nListe des équipements :%s", super.toString(), this.vitesseBatVoy, equipements);
   }
 
 }
