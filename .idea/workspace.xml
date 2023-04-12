@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085553f8-95ae-4788-adcf-1e13de1373b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/TestPDF.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDF.java" afterDir="false" />
-    </list>
+    <list default="true" id="085553f8-95ae-4788-adcf-1e13de1373b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +57,11 @@
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -87,7 +87,12 @@
       <option name="presentableId" value="Default" />
       <updated>1677660326600</updated>
       <workItem from="1677660327822" duration="8430000" />
-      <workItem from="1677692906518" duration="2757000" />
+      <workItem from="1677692906518" duration="2826000" />
+      <workItem from="1677749616681" duration="406000" />
+      <workItem from="1677828156200" duration="9073000" />
+      <workItem from="1678619162049" duration="138000" />
+      <workItem from="1678619310138" duration="218000" />
+      <workItem from="1681281694583" duration="229000" />
     </task>
     <servers />
   </component>

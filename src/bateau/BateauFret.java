@@ -4,7 +4,7 @@ public class BateauFret extends Bateau {
 
   private int poidsMaxBatFret;
 
-  public BateauFret(String id, double largeur, double longueur, String nom, int poidsMaxBatFret) {
+  public BateauFret(int id, float largeur, float longueur, String nom, int poidsMaxBatFret) {
     super(id, largeur, longueur, nom);
     this.poidsMaxBatFret = poidsMaxBatFret;
   }

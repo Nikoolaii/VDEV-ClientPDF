@@ -5,9 +5,11 @@ package bateau;
  */
 public class Bateau {
 
-  private String idBat, nomBat;
+  private int idBat;
 
-  private double largeurBat, longueurBat;
+  private String nomBat;
+
+  private float largeurBat, longueurBat;
 
   /**
    * Constructeur de la classe Bateau
@@ -17,7 +19,7 @@ public class Bateau {
    * @param longueurBat longueur du bateau
    * @param nomBat      nom du bateau
    */
-  public Bateau(String idBat, double largeurBat, double longueurBat, String nomBat) {
+  public Bateau(int idBat, float largeurBat, float longueurBat, String nomBat) {
     this.idBat = idBat;
     this.largeurBat = largeurBat;
     this.longueurBat = longueurBat;
@@ -30,7 +32,7 @@ public class Bateau {
    *
    * @return l'identifiant du bateau
    */
-  public String getIdBat() {
+  public int getIdBat() {
     return idBat;
   }
 
@@ -39,7 +41,7 @@ public class Bateau {
    *
    * @param idBat l'identifiant du bateau
    */
-  public void setIdBat(String idBat) {
+  public void setIdBat(int idBat) {
     this.idBat = idBat;
   }
 
@@ -48,7 +50,7 @@ public class Bateau {
    *
    * @return la largeur du bateau
    */
-  public double getLargeurBat() {
+  public float getLargeurBat() {
     return largeurBat;
   }
 
@@ -57,7 +59,7 @@ public class Bateau {
    *
    * @param largeurBat la largeur du bateau
    */
-  public void setLargeurBat(double largeurBat) {
+  public void setLargeurBat(float largeurBat) {
     this.largeurBat = largeurBat;
   }
 
@@ -66,7 +68,7 @@ public class Bateau {
    *
    * @return la longueur du bateau
    */
-  public double getLongueurBat() {
+  public float getLongueurBat() {
     return longueurBat;
   }
 
@@ -75,7 +77,7 @@ public class Bateau {
    *
    * @param longueurBat la longueur du bateau
    */
-  public void setLongueurBat(double longueurBat) {
+  public void setLongueurBat(float longueurBat) {
     this.longueurBat = longueurBat;
   }
 

@@ -25,7 +25,7 @@ public class BateauVoyageur extends Bateau {
    * @param imageBatVoy   image du bateau
    * @param vitesseBatVoy vitesse du bateau
    */
-  public BateauVoyageur(String id, double largeur, double longueur, String nom, String imageBatVoy, double vitesseBatVoy) {
+  public BateauVoyageur(int id, float largeur, float longueur, String nom, String imageBatVoy, double vitesseBatVoy) {
     super(id, largeur, longueur, nom);
     this.imageBatVoy = imageBatVoy;
     this.vitesseBatVoy = vitesseBatVoy;
