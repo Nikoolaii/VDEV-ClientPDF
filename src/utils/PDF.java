@@ -17,13 +17,9 @@ import java.util.List;
 public class PDF {
 
   final String CHEMIN_PDF = Paths.get("./pdf").toAbsolutePath().toString();
-
-  private PDDocument document;
-
-  private String nomDocument;
-
+  private final PDDocument document;
+  private final String nomDocument;
   private PDPageContentStream contents;
-
   private float yOffset = 0;
 
   public PDF(String nomDocument) {
@@ -157,4 +153,19 @@ public class PDF {
     document.close();
   }
 
+  public void sautDeLigne() {
+    yOffset -= 12;
+  }
+
+    public void ouvrirPDFmacEtWindows() {
+        try {
+            Runtime.getRuntime().exec("open " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
+        } catch (IOException e) {
+            try {
+                Runtime.getRuntime().exec("cmd /c start " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
+    }
 }
