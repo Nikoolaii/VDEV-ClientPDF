@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.Equipement">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="900" height="483"/>
+      <xy x="20" y="20" width="1200" height="600"/>
     </constraints>
     <properties>
-      <maximumSize width="900" height="400"/>
-      <minimumSize width="900" height="400"/>
-      <preferredSize width="900" height="400"/>
+      <maximumSize width="1200" height="600"/>
+      <minimumSize width="1200" height="600"/>
+      <preferredSize width="1200" height="600"/>
     </properties>
     <border type="none"/>
     <children>
       <component id="f8e34" class="javax.swing.JList" binding="listBateaux">
         <constraints>
-          <grid row="3" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="3" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
@@ -38,7 +38,7 @@
       </component>
       <component id="7a8b3" class="javax.swing.JList" binding="listEquipement">
         <constraints>
-          <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="3" column="2" row-span="3" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
@@ -55,20 +55,12 @@
       <component id="23df4" class="javax.swing.JLabel" binding="addEquipText">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="140" height="85"/>
+            <preferred-size width="140" height="69"/>
           </grid>
         </constraints>
         <properties>
           <text value="Ajouter un équipement"/>
         </properties>
-      </component>
-      <component id="23ec7" class="javax.swing.JTextField" binding="newEquipementText">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
       <component id="8f253" class="javax.swing.JLabel">
         <constraints>
@@ -93,6 +85,14 @@
         <properties>
           <text value="Supprimer l'équipement"/>
         </properties>
+      </component>
+      <component id="23ec7" class="javax.swing.JTextField" binding="newEquipementText">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
       </component>
     </children>
   </grid>

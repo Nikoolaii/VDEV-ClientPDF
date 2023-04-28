@@ -5,6 +5,8 @@ import controllers.BateauEquipementController;
 import controllers.EquipementController;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -37,7 +39,11 @@ public class Equipement {
         validerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                NewEquipement();
+                try {
+                    newEquipement();
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
 
@@ -46,7 +52,11 @@ public class Equipement {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    NewEquipement();
+                    try {
+                        newEquipement();
+                    } catch (SQLException ex) {
+                        throw new RuntimeException(ex);
+                    }
                 }
             }
         });
@@ -90,12 +100,28 @@ public class Equipement {
                 }
             }
         });
+        listEquipement.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (listEquipement.getSelectedValue() != null){
+                    if (listEquipement.getSelectedValue().toString().equals("Ajouter un équipement")){
+                        newEquipementText.setText("");
+                        validerButton.setText("Ajouter");
+                    } else {
+                        bateau.Equipement unEquipement = (bateau.Equipement) listEquipement.getSelectedValue();
+                        newEquipementText.setText(unEquipement.getLibEquip());
+                        validerButton.setText("Modifier");
+                    }
+                }
+            }
+        });
     }
 
     // Fonction pour afficher la liste des équipements
     public void setEquipementList() throws SQLException {
         ResultSet result = EquipementController.findAll();
         DefaultListModel listModel = new DefaultListModel();
+        listModel.add(0, "Ajouter un équipement");
         while (result.next()) {
             bateau.Equipement equipement = new bateau.Equipement(result.getString("id"), result.getString("nom"));
             listModel.addElement(equipement);
@@ -115,14 +141,20 @@ public class Equipement {
     }
 
     // Fonction pour créer un nouvel équipement
-    public void NewEquipement(){
-        if (newEquipementText.getText().length() > 0) {
-            EquipementController.create(newEquipementText.getText());
-            newEquipementText.setText("");
-            try {
+    public void newEquipement() throws SQLException {
+        if (newEquipementText.getText().length() > 0){
+            if (listEquipement.getSelectedValue().equals("Ajouter un équipement")) {
+                EquipementController.create(newEquipementText.getText());
+                newEquipementText.setText("");
                 setEquipementList();
-            } catch (SQLException ex) {
-                throw new RuntimeException(ex);
+            } else if (listEquipement.getSelectedValue() != null){
+                int selectIndex = listEquipement.getSelectedIndex();
+                bateau.Equipement unEquipement = (bateau.Equipement) listEquipement.getSelectedValue();
+                String idEquipement = unEquipement.getIdEquip();
+                System.out.println(newEquipementText.getText());
+                EquipementController.update(Integer.parseInt(idEquipement), newEquipementText.getText());
+                setEquipementList();
+                listEquipement.setSelectedIndex(selectIndex);
             }
         }
     }

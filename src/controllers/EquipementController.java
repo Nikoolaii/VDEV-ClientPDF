@@ -27,6 +27,7 @@ public class EquipementController {
         try {
             PreparedStatement statement = connexion.prepareStatement("UPDATE equipement SET nom = ? WHERE id = ?");
             statement.setString(1, nom);
+            statement.setInt(2, id);
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

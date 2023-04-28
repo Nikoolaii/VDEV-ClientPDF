@@ -11,7 +11,9 @@ public class mainMenu {
     private JButton créationDuPDFButton;
     private JButton modifierLesÉquipementsButton;
     public JPanel mainPanel;
-public mainMenu() {
+    private JButton editBoat;
+
+    public mainMenu() {
     // Ouverture de la fenêtre de modification des équipements
     modifierLesÉquipementsButton.addActionListener(new ActionListener() {
         @Override
@@ -41,5 +43,19 @@ public mainMenu() {
             }
         }
     });
-}
+        editBoat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame boat = new JFrame("Bateau");
+                try {
+                    boat.setContentPane(new Boat().mainPanel);
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
+                boat.setDefaultCloseOperation(boat.HIDE_ON_CLOSE);
+                boat.pack();
+                boat.setVisible(true);
+            }
+        });
+    }
 }

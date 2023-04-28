@@ -8,42 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4448bde1-c576-4a1a-a4ae-38bec0d10d39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/BateauEquipementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/mainMenu.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/mainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/unitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/GeneratePDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ede0f5-a4c6-4a73-a926-533441abd331.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ede0f5-a4c6-4a73-a926-533441abd331/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ede0f5-a4c6-4a73-a926-533441abd331/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ede0f5-a4c6-4a73-a926-533441abd331/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00ede0f5-a4c6-4a73-a926-533441abd331/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_pdfbox.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VDEV-Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VDEV-Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bateaux.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bateaux.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bateau/Bateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/Bateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bateau/BateauFret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/BateauFret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bateau/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/Equipement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client-pdf.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Boat.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Boat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/BateauController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BateauController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/EquipementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EquipementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/Equipement.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Equipement.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Equipement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/BddConnexion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/PDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/mainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/mainMenu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/mainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/mainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +48,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "337",
     "WebServerToolWindowFactoryState": "false",
     "create.test.in.the.same.root": "true",
     "last_opened_file_path": "/Users/nikoolaii/Workflow/Java/VDEV/client-pdf",
@@ -86,11 +60,11 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.unitTest">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -142,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="JUnit.unitTest" />
         <item itemvalue="JUnit.unitTest.test" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +137,9 @@
       <workItem from="1682496190119" duration="463000" />
       <workItem from="1682501806211" duration="3000" />
       <workItem from="1682501837062" duration="1741000" />
+      <workItem from="1682663762056" duration="17000" />
+      <workItem from="1682671208038" duration="4898000" />
+      <workItem from="1682688573542" duration="4314000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@ public class BateauController {
     Connection connexion = Database.connect();
 
     try {
-      PreparedStatement statement = connexion.prepareStatement("INSERT INTO bateau (nom, type, longueur, largeur, vitesse, poidsMax) VALUES (?, ?, ?, ?, ?, ?)");
+      PreparedStatement statement = connexion.prepareStatement("INSERT INTO bateau (nom, type, longueur, largeur, vitesse, poids_max) VALUES (?, ?, ?, ?, ?, ?)");
       statement.setString(1, nom);
       statement.setString(2, type);
       statement.setFloat(3, longueur);
@@ -31,7 +31,7 @@ public class BateauController {
     Connection connexion = Database.connect();
 
     try {
-      PreparedStatement statement = connexion.prepareStatement("UPDATE bateau SET nom = ?, type = ?, longueur = ?, largeur = ?, vitesse = ?, poidsMax = ? WHERE id = ?");
+      PreparedStatement statement = connexion.prepareStatement("UPDATE bateau SET nom = ?, type = ?, longueur = ?, largeur = ?, vitesse = ?, poids_max = ? WHERE id = ?");
       statement.setString(1, nom);
       statement.setString(2, type);
       statement.setFloat(3, longueur);
