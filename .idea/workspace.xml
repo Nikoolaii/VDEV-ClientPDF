@@ -8,15 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4448bde1-c576-4a1a-a4ae-38bec0d10d39" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/Boat.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Boat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bateau/Bateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/Bateau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bateau/BateauFret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/BateauFret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/BateauVoyageur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bateau/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bateau/Equipement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/BateauController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BateauController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/BateauEquipementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BateauEquipementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/EquipementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/EquipementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Equipement.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Equipement.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Boat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Equipement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/mainMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/mainMenu.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/mainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/mainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GeneratePDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GeneratePDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/PDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/PDF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +34,17 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2OmlM1OSKhV5A3ncCYvPQ7HNv96" />
   <component name="ProjectViewState">
@@ -51,6 +64,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "337",
     "WebServerToolWindowFactoryState": "false",
     "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/nikoolaii/Workflow/Java/VDEV/client-pdf",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,8 +73,9 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -140,6 +155,7 @@
       <workItem from="1682663762056" duration="17000" />
       <workItem from="1682671208038" duration="4898000" />
       <workItem from="1682688573542" duration="4314000" />
+      <workItem from="1683017410390" duration="1035000" />
     </task>
     <servers />
   </component>

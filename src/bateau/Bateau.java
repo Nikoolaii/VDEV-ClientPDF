@@ -5,114 +5,130 @@ package bateau;
  */
 public class Bateau {
 
-    private int idBat;
+  private final float vitesseBat;
 
-    private String nomBat;
+  /**
+   * Identifiant du bateau
+   */
+  private int idBat;
 
-    private float largeurBat;
-    private float longueurBat;
-    private final float vitesseBat;
+  /**
+   * Nom du bateau
+   */
+  private String nomBat;
 
-    /**
-     * Constructeur de la classe Bateau
-     *
-     * @param idBat       identifiant du bateau
-     * @param largeurBat  largeur du bateau
-     * @param longueurBat longueur du bateau
-     * @param nomBat      nom du bateau
-     * @param vitesseBat  vitesse du bateau
-     */
-    public Bateau(int idBat, float largeurBat, float longueurBat, String nomBat, float vitesseBat) {
-        this.idBat = idBat;
-        this.largeurBat = largeurBat;
-        this.longueurBat = longueurBat;
-        this.nomBat = nomBat;
-        this.vitesseBat = vitesseBat;
+  /**
+   * Largeur du bateau
+   */
+  private float largeurBat;
 
-    }
+  /**
+   * Longueur du bateau
+   */
+  private float longueurBat;
 
-    /**
-     * Retourne l'identifiant du bateau
-     *
-     * @return l'identifiant du bateau
-     */
-    public int getIdBat() {
-        return idBat;
-    }
+  /**
+   * Constructeur de la classe Bateau
+   *
+   * @param idBat       identifiant du bateau
+   * @param largeurBat  largeur du bateau
+   * @param longueurBat longueur du bateau
+   * @param nomBat      nom du bateau
+   * @param vitesseBat  vitesse du bateau
+   */
+  public Bateau(int idBat, float largeurBat, float longueurBat, String nomBat, float vitesseBat) {
+    this.idBat = idBat;
+    this.largeurBat = largeurBat;
+    this.longueurBat = longueurBat;
+    this.nomBat = nomBat;
+    this.vitesseBat = vitesseBat;
 
-    /**
-     * Modifie l'identifiant du bateau
-     *
-     * @param idBat l'identifiant du bateau
-     */
-    public void setIdBat(int idBat) {
-        this.idBat = idBat;
-    }
+  }
 
-    /**
-     * Retourne la largeur du bateau
-     *
-     * @return la largeur du bateau
-     */
-    public float getLargeurBat() {
-        return largeurBat;
-    }
+  /**
+   * Retourne l'identifiant du bateau
+   *
+   * @return l'identifiant du bateau
+   */
+  public int getIdBat() {
+    return idBat;
+  }
 
-    /**
-     * Modifie la largeur du bateau
-     *
-     * @param largeurBat la largeur du bateau
-     */
-    public void setLargeurBat(float largeurBat) {
-        this.largeurBat = largeurBat;
-    }
+  /**
+   * Modifie l'identifiant du bateau
+   *
+   * @param idBat l'identifiant du bateau
+   */
+  public void setIdBat(int idBat) {
+    this.idBat = idBat;
+  }
 
-    /**
-     * Retourne la longueur du bateau
-     *
-     * @return la longueur du bateau
-     */
-    public float getLongueurBat() {
-        return longueurBat;
-    }
+  /**
+   * Retourne la largeur du bateau
+   *
+   * @return la largeur du bateau
+   */
+  public float getLargeurBat() {
+    return largeurBat;
+  }
 
-    /**
-     * Modifie la longueur du bateau
-     *
-     * @param longueurBat la longueur du bateau
-     */
-    public void setLongueurBat(float longueurBat) {
-        this.longueurBat = longueurBat;
-    }
+  /**
+   * Modifie la largeur du bateau
+   *
+   * @param largeurBat la largeur du bateau
+   */
+  public void setLargeurBat(float largeurBat) {
+    this.largeurBat = largeurBat;
+  }
 
-    /**
-     * Retourne le nom du bateau
-     *
-     * @return le nom du bateau
-     */
-    public String getNomBat() {
-        return nomBat;
-    }
+  /**
+   * Retourne la longueur du bateau
+   *
+   * @return la longueur du bateau
+   */
+  public float getLongueurBat() {
+    return longueurBat;
+  }
 
-    /**
-     * Modifie le nom du bateau
-     *
-     * @param nomBat le nom du bateau
-     */
-    public void setNomBat(String nomBat) {
-        this.nomBat = nomBat;
-    }
+  /**
+   * Modifie la longueur du bateau
+   *
+   * @param longueurBat la longueur du bateau
+   */
+  public void setLongueurBat(float longueurBat) {
+    this.longueurBat = longueurBat;
+  }
 
-    /**
-     * Retourne une chaîne de caractères contenant les informations du bateau
-     *
-     * @return une chaîne de caractères contenant les informations du bateau
-     */
-    @Override
-    public String toString() {
-        return this.nomBat;
-    }
+  /**
+   * Retourne le nom du bateau
+   *
+   * @return le nom du bateau
+   */
+  public String getNomBat() {
+    return nomBat;
+  }
 
-    public Float getVitesseBat() { return this.vitesseBat; }
+  /**
+   * Modifie le nom du bateau
+   *
+   * @param nomBat le nom du bateau
+   */
+  public void setNomBat(String nomBat) {
+    this.nomBat = nomBat;
+  }
+
+  /**
+   * Retourne une chaîne de caractères contenant les informations du bateau
+   *
+   * @return une chaîne de caractères contenant les informations du bateau
+   */
+  @Override
+  public String toString() {
+    return this.nomBat;
+  }
+
+  public Float getVitesseBat() {
+    return this.vitesseBat;
+  }
 
 }

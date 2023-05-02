@@ -9,10 +9,19 @@ import java.util.List;
  */
 public class BateauVoyageur extends Bateau {
 
+  /**
+   * Vitesse du bateau
+   */
   private double vitesseBatVoy;
 
+  /**
+   * Image du bateau
+   */
   private String imageBatVoy;
 
+  /**
+   * Liste des équipements du bateau
+   */
   private List<Equipement> lesEquipements = new ArrayList<>();
 
   /**

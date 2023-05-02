@@ -4,8 +4,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 
+/**
+ * Classe Database
+ */
 public class Database {
 
+  /**
+   * Connecte à la base de données
+   *
+   * @return Connection
+   */
   public static Connection connect() {
     Connection connexion = null;
 
@@ -13,7 +21,7 @@ public class Database {
       // Chargement du driver
       Class.forName("com.mysql.cj.jdbc.Driver");
 
-        // Connexion à la base de données
+      // Connexion à la base de données
       String url = "jdbc:mysql://localhost:8889/vdev";
       String user = "root";
       String password = "root";

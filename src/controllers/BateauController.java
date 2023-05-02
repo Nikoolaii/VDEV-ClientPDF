@@ -8,8 +8,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
+/**
+ * Classe BateauController
+ */
 public class BateauController {
 
+  /**
+   * Crée un bateau dans la base de données
+   *
+   * @param nom      nom du bateau
+   * @param type     type du bateau
+   * @param longueur longueur du bateau
+   * @param largeur  largeur du bateau
+   * @param vitesse  vitesse du bateau
+   * @param poidsMax poids maximum du bateau
+   */
   public static void create(String nom, String type, float longueur, float largeur, float vitesse, float poidsMax) {
     Connection connexion = Database.connect();
 
@@ -27,6 +40,17 @@ public class BateauController {
     }
   }
 
+  /**
+   * Met à jour un bateau dans la base de données
+   *
+   * @param id       identifiant du bateau
+   * @param nom      nom du bateau
+   * @param type     type du bateau
+   * @param longueur longueur du bateau
+   * @param largeur  largeur du bateau
+   * @param vitesse  vitesse du bateau
+   * @param poidsMax poids maximum du bateau
+   */
   public static void update(int id, String nom, String type, float longueur, float largeur, float vitesse, float poidsMax) {
     Connection connexion = Database.connect();
 
@@ -45,6 +69,11 @@ public class BateauController {
     }
   }
 
+  /**
+   * Supprime un bateau de la base de données
+   *
+   * @param id identifiant du bateau
+   */
   public static void delete(int id) {
     Connection connexion = Database.connect();
 
@@ -57,6 +86,13 @@ public class BateauController {
     }
   }
 
+  /**
+   * Retourne un bateau de la base de données
+   *
+   * @param id identifiant du bateau
+   *
+   * @return un bateau de la base de données
+   */
   public static ResultSet findOne(int id) {
     Connection connexion = Database.connect();
 
@@ -76,6 +112,11 @@ public class BateauController {
     return result;
   }
 
+  /**
+   * Retourne tous les bateaux de la base de données
+   *
+   * @return tous les bateaux de la base de données
+   */
   public static ResultSet findAll() {
     Connection connexion = Database.connect();
 

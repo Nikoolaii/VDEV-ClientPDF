@@ -14,14 +14,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * Classe PDF
+ */
 public class PDF {
 
+  /**
+   * Chemin du dossier contenant les PDF
+   */
   final String CHEMIN_PDF = Paths.get("./pdf").toAbsolutePath().toString();
+
+  /**
+   * Document PDF
+   */
   private final PDDocument document;
+
+  /**
+   * Nom du document PDF
+   */
   private final String nomDocument;
+
+  /**
+   * Liste des lignes du document PDF
+   */
   private PDPageContentStream contents;
+
+  /**
+   * Ligne du document PDF
+   */
   private float yOffset = 0;
 
+  /**
+   * Retourne le document PDF
+   *
+   * @param nomDocument nom du document PDF
+   */
   public PDF(String nomDocument) {
     document = new PDDocument();
     PDPage page = new PDPage();
@@ -30,6 +57,17 @@ public class PDF {
     this.nomDocument = nomDocument;
   }
 
+  /**
+   * Formate le texte
+   *
+   * @param wholeLetter texte à formater
+   * @param lines       liste des lignes
+   * @param fontSize    taille de la police
+   * @param pdfFont     police
+   * @param width       largeur
+   *
+   * @throws IOException exception
+   */
   private void parseIndividualLines(String wholeLetter, List<String> lines, float fontSize, PDFont pdfFont, float width) throws IOException {
     String[] paragraphs = wholeLetter.split(System.getProperty("line.separator"));
 
@@ -67,6 +105,13 @@ public class PDF {
     }
   }
 
+  /**
+   * Ajoute une image au document PDF
+   *
+   * @param cheminImage chemin de l'image
+   *
+   * @throws IOException exception
+   */
   public void chargerImage(String cheminImage) throws IOException {
     PDPage page = document.getPage(document.getNumberOfPages() - 1);
 
@@ -101,6 +146,13 @@ public class PDF {
     contents.close();
   }
 
+  /**
+   * Ajoute du texte au document PDF
+   *
+   * @param texte texte à ajouter
+   *
+   * @throws IOException exception
+   */
   public void ecrireTexte(String texte) throws IOException {
     PDPage page = document.getPage(document.getNumberOfPages() - 1);
 
@@ -148,24 +200,36 @@ public class PDF {
     contents.close();
   }
 
+  /**
+   * Ferme le document PDF
+   *
+   * @throws IOException exception
+   */
   public void fermer() throws IOException {
     document.save(String.format("%s/%s.pdf", CHEMIN_PDF, nomDocument));
     document.close();
   }
 
+  /**
+   * Saut de ligne
+   */
   public void sautDeLigne() {
     yOffset -= 12;
   }
 
-    public void ouvrirPDFmacEtWindows() {
-        try {
-            Runtime.getRuntime().exec("open " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
-        } catch (IOException e) {
-            try {
-                Runtime.getRuntime().exec("cmd /c start " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-        }
+  /**
+   * Ouvre le document PDF sur le système
+   */
+  public void openDocument() {
+    try {
+      Runtime.getRuntime().exec("open " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
+    } catch (IOException e) {
+      try {
+        Runtime.getRuntime().exec("cmd /c start " + CHEMIN_PDF + "/" + nomDocument + ".pdf");
+      } catch (IOException e1) {
+        e1.printStackTrace();
+      }
     }
+  }
+
 }
